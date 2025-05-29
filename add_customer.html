@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Add Customer - Inventory Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Add Customer</h1>
+</header>
+
+<main class="form-container">
+  <form action="insert_customer.php" method="POST" class="form">
+    <input type="number" name="customer_id" placeholder="Customer ID" required>
+    <input type="text" name="name" placeholder="Customer Name" required>
+    <input type="text" name="address" placeholder="Address" required>
+    <input type="number" name="age" placeholder="Age" required>
+    <input type="text" name="phone_num" placeholder="Phone Number" required>
+    <button type="submit" class="btn">Add Customer</button>
+  </form>
+
+  <div class="back-link">
+    <a href="index.html" class="btn-back">← Back to Dashboard</a>
+  </div>
+</main>
+
+</body>
+</html>

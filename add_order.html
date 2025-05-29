@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Add Order - Inventory Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Add Order</h1>
+</header>
+
+<main class="form-container">
+  <form action="insert_order.php" method="POST" class="form">
+    <input type="number" name="order_id" placeholder="Order ID" required>
+    <input type="number" name="supplier_id" placeholder="Supplier ID" required>
+    <input type="number" name="product_id" placeholder="Product ID" required>
+    <input type="number" name="customer_id" placeholder="Customer ID" required>
+    <input type="number" name="quantity_ordered" placeholder="Quantity Ordered" required>
+    <button type="submit" class="btn">Add Order</button>
+  </form>
+
+  <div class="back-link">
+    <a href="index.html" class="btn-back">← Back to Dashboard</a>
+  </div>
+</main>
+
+</body>
+</html>
+

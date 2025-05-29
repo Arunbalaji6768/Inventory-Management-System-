@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Add Product - Inventory Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Add Product</h1>
+</header>
+
+<main class="form-container">
+  <form action="insert_product.php" method="POST" class="form">
+    <input type="number" name="product_id" placeholder="Product ID" required>
+    <input type="text" name="name" placeholder="Product Name" required>
+    <input type="text" name="description" placeholder="Description" required>
+    <input type="number" step="0.01" name="unit_price" placeholder="Unit Price" required>
+    <input type="number" name="quantity_available" placeholder="Quantity Available" required>
+    <button type="submit" class="btn">Add Product</button>
+  </form>
+
+  <div class="back-link">
+    <a href="index.html" class="btn-back">← Back to Dashboard</a>
+  </div>
+</main>
+
+</body>
+</html>
